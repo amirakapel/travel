@@ -8,9 +8,8 @@ function Nav() {
     
   useEffect(() => {
     function funscroll() {
-      const nav = document.querySelector(".navbar");
-      if (!nav) return;
-      const scrolll = window.scrollY;
+      var nav = document.querySelector(".navbar");
+      var scrolll = window.scrollY;
       if (scrolll < 200) {
         nav.classList.remove("navscroll");
       } else {
