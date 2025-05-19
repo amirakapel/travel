@@ -159,8 +159,8 @@ function Page() {
           <h1 className="api_titel">Hotel</h1>
           </div>
       {Hotel.map((items) => (
-        <div key={items.id}>
-        <div className="col-md-4 mt-5 api_cart" >
+        <div className="api_cart" key={items.id}>
+        <div className="col-md-4 mt-5 " >
         <div className="Place_cart wow fadeInDown" data-wow-delay=".5s">
         <img src={items.image}></img>
         <div className="place_back">
@@ -187,8 +187,8 @@ function Page() {
           <h1  className="api_titel">Room</h1>
           </div>
       {Room.map((p) => (
-        <div key={p.id}>
-        <div className="col-md-4 mt-5 api_cart" >
+        <div className="api_cart" key={p.id}>
+        <div className="col-md-4 mt-5 " >
         <div className="Place_cart wow fadeInDown" data-wow-delay=".5s">
         <img src={p.image}></img>
         <div className="place_back">
@@ -215,8 +215,8 @@ function Page() {
           <h1  className="api_titel">Restaurant</h1>
           </div>
       {Resto.map((p) => (
-        <div key={p.id}>
-        <div className="col-md-4 mt-5 api_cart" >
+        <div className="api_cart" key={p.id}>
+        <div className="col-md-4 mt-5 " >
         <div className="Place_cart wow fadeInDown" data-wow-delay=".5s">
         <img src={p.image}></img>
         <div className="place_back">
