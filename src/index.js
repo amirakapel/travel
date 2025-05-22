@@ -7,11 +7,16 @@ import {
 import App from "./App";
 import AllDestination from "./Destination/AllDestination";
 import AllCart from "./Cart/AllCart";
+import AllHome from "./home/AllHome";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+  },
+    {
+    path: "Home",
+    element: <AllHome/>,
   },
   {
     path: "destination",

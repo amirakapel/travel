@@ -1,9 +1,7 @@
 import React from 'react'
-import Nav from '../Nav'
 import { CartProvider,useCart } from 'react-use-cart';
 import Nav_cart from '../Nav_cart';
 import Footer from '../Footer';
-
 
 
 

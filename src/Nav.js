@@ -27,7 +27,7 @@ function Nav() {
     <div className="row">
         <div className="col-md-12">
             <nav className=" navbar navbar-expand-lg navbar-light">
-                <Link className="navbar-brand" href="/">Travel</Link>
+                <Link className="navbar-brand" to="/Home">Travel</Link>
                 <ul className="navbar-nav_darkMode mt-2">
                       <li className="nav-item_darkMode ">
                       <button id="white_8" ><i className="fa-solid fa-moon"></i></button>
@@ -42,7 +42,7 @@ function Nav() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul className="navbar-nav ml-auto pl-2">
                     <li className="nav-item ">
-                      <a className="nav-link " id="white_1" href="/">Home</a>
+                      <Link className="nav-link " id="white_1" to="/Home">Home</Link>
                     </li>
                     <li className="nav-item ">
                       <a className="nav-link " smooth={true} offset={50}  duration={500}  id="white_2" href="#Services_click">Services</a>
@@ -51,7 +51,7 @@ function Nav() {
                       <a className="nav-link " id="white_3" href="#About_click">About</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" id="white_4" href="/destination">destination</a>
+                       <Link className="nav-link" id="white_4" to="/destination">destination</Link>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link" id="white_5" href="#Hotel_click">Hotel</a>
@@ -63,7 +63,7 @@ function Nav() {
                       <a className="nav-link" id="white_7" href="#Contact_click">Contact</a>
                     </li>
                       <li className="nav-item">
-                      <a className="nav-link" id="white_4" href="/cart"><i className="fas fa-shopping-cart"></i> </a>
+                      <Link className="nav-link" id="white_4" to="/cart"><i className="fas fa-shopping-cart"></i> </Link>
                     </li>
                   </ul>
                 </div>

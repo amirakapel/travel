@@ -12,10 +12,13 @@ import Resturant from './Resturant'
 import Contact from './Contact'
 import { CartProvider } from 'react-use-cart'
 import ScrollToTop from 'react-scroll-to-top'
+import Nav from '../Nav'
+import Footer from '../Footer'
 
 function AllHome() {
   return (
     <CartProvider>
+      <Nav/>
         <Hreader/>
         <TRAVEL/>
         <Services/>
@@ -27,6 +30,7 @@ function AllHome() {
         <Rooms/>
         <Resturant/>
         <Contact/>
+        <Footer/>
        <ScrollToTop smooth 
        component="Top"
        style={{backgroundColor:"#d8aea8", color:"white" , boxShadow:"0px 6px 9px 1px #00000021"}}
