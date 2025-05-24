@@ -10,14 +10,26 @@ function Login() {
   var pargRef = useRef();
   var buttonRef = useRef();
   var button2Ref = useRef();
+
   var navigate = useNavigate();
 
   var formMove = () => {
     moveRef.current.classList.add("active");
     hideeRef.current.classList.add("hidennn");
     hidee2Ref.current.classList.add("showw");
+
+const height = moveRef.current.offsetHeight;
+  if (height == 431) {
+    
+    moveRef.current.style.transform = `translateY(431px)`;
+    moveRef.current.style.transition = "transform 0.5s";
+    moveRef.current.style.left ='16px'; 
+  }else{
     moveRef.current.style.transform = "translateX(100px)";
     moveRef.current.style.transition = "transform 0.5s ease";
+  }
+
+
     nameRef.current.innerHTML = "Hello Friend!";
     pargRef.current.innerHTML =
       "A small river named Duden flows by their place and supplies it with the necessary regelialia.";
@@ -29,8 +41,18 @@ function Login() {
     moveRef.current.classList.remove("active");
     hideeRef.current.classList.remove("hidennn");
     hidee2Ref.current.classList.remove("showw");
+
+    const height = moveRef.current.offsetHeight;
+  if (height == 431) {
+    moveRef.current.style.transform = `translateY(0px)`;
+    moveRef.current.style.transition = "transform 0.5s";
+    moveRef.current.style.left ='16px'; 
+  }else{
+
     moveRef.current.style.transform = "translateX(0px)";
     moveRef.current.style.transition = "transform 0.5s ease";
+  }
+
     nameRef.current.innerHTML = "Welcome To Travel Website";
     pargRef.current.innerHTML =
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.";

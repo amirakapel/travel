@@ -70,6 +70,16 @@
     border: 1px solid #d8aea8;
     transition: all 0.5s linear;
 }
+  @media screen and (max-width: 450px){
+.form_1_body{
+          margin-top: 468px;
+        width: 393px;
+        margin-left: 17px;
+
+}
+
+    }
+
 
 
 .form_2_body{
@@ -84,6 +94,17 @@
     opacity: 0;
 }
 
+
+  @media screen and (max-width: 450px){
+.form_2_body{
+       width: 396px;
+    margin-top: 36px;
+    height: 431px;
+    right: 11px;
+
+}
+
+    }
 .form_2_body h2{
     font-family: initial;
     padding-top: 40px;
@@ -193,10 +214,16 @@
     transition: all 0.5s linear;
 }
 
-#changbutton2{
-    opacity: 0;
+  @media screen and (max-width: 450px){
+.welcom_cart{
+       width: 396px;
+    margin-top: 36px;
+    height: 431px;
+    right: 11px;
+
 }
 
+    }
 
 
 .active{
